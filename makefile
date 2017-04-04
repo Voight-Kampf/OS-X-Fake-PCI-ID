@@ -21,7 +21,7 @@ ifeq ($(findstring 64,$(BITS)),64)
 OPTIONS:=$(OPTIONS) -arch x86_64
 endif
 
-OPTIONS:=$(OPTIONS) -scheme FakePCIID
+OPTIONS:=$(OPTIONS) -scheme FakePCIID CONFIGURATION_BUILD_DIR=./build
 
 .PHONY: all
 all:
